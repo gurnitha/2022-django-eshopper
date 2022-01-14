@@ -44,3 +44,12 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
         new file:   templates/product_detail.html
         modified:   templates/products.html
+
+
+#### 5. Create contact page
+
+        modified:   README.md
+        modified:   shop/urls.py
+        modified:   shop/views.py
+        modified:   templates/base.html
+        new file:   templates/contact.html
