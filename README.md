@@ -71,7 +71,12 @@ Based on CodingEx tutorial on Youtube
         new file:   templates/posts.html
 
 
+#### 7. Create post_detail page 
 
+        modified:   blog/urls.py
+        modified:   blog/views.py
+        new file:   templates/post_detail.html
+        modified:   templates/posts.html
 
 
 
