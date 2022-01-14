@@ -14,5 +14,9 @@ def product_detail(request):
 	return render(request, 'product_detail.html')
 
 
+def cart(request):
+	return render(request, 'cart.html')
+
+
 def contact(request):
 	return render(request, 'contact.html')

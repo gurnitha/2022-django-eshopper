@@ -79,9 +79,28 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/posts.html
 
 
+#### 8. Create users app, and register_login page
 
 
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   shop/urls.py
+        modified:   shop/views.py
+        modified:   templates/base.html
+        new file:   templates/cart.html
+        modified:   templates/products.html
+        new file:   templates/register_login.html
+        new file:   users/__init__.py
+        new file:   users/admin.py
+        new file:   users/apps.py
+        new file:   users/migrations/__init__.py
+        new file:   users/models.py
+        new file:   users/tests.py
+        new file:   users/urls.py
+        new file:   users/views.py
 
+
+#### ================== END STATIC APP ========================
 
 
 
