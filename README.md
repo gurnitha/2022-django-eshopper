@@ -53,3 +53,124 @@ Based on CodingEx tutorial on Youtube
         modified:   shop/views.py
         modified:   templates/base.html
         new file:   templates/contact.html
+
+
+#### 6. Create blog app and posts page
+
+        new file:   blog/__init__.py
+        new file:   blog/admin.py
+        new file:   blog/apps.py
+        new file:   blog/migrations/__init__.py
+        new file:   blog/models.py
+        new file:   blog/tests.py
+        new file:   blog/urls.py
+        new file:   blog/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   templates/base.html
+        new file:   templates/posts.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
