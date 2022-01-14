@@ -27,3 +27,11 @@ Based on CodingEx tutorial on Youtube
         modified:   README.md
         new file:   templates/base.html
         modified:   templates/index.html
+
+
+#### 3. Create products page
+
+        modified:   shop/urls.py
+        modified:   shop/views.py
+        modified:   templates/base.html
+        new file:   templates/products.html
