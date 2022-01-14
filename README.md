@@ -20,3 +20,10 @@ Based on CodingEx tutorial on Youtube
         new file:   shop/urls.py
         new file:   shop/views.py
         new file:   templates/index.html
+
+
+#### 2. Create base template and modified navbar
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/index.html
