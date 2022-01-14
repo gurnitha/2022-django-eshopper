@@ -35,3 +35,12 @@ Based on CodingEx tutorial on Youtube
         modified:   shop/views.py
         modified:   templates/base.html
         new file:   templates/products.html
+
+
+#### 4. Create product_detail page
+
+        modified:   shop/urls.py
+        modified:   shop/views.py
+        modified:   templates/index.html
+        new file:   templates/product_detail.html
+        modified:   templates/products.html
