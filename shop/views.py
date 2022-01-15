@@ -13,9 +13,13 @@ def index(request):
 	# Grab all category objects
 	category_list = models.Category.objects.all()
 
+	# Grab all featured products
+	featured_product_list = models.Product.objects.filter(is_featured=True)
+
 	# Put objects in context dictionary
 	context = {
 		'category_list':category_list,
+		'featured_product_list':featured_product_list,
 	}
 	
 	# Fetch context into the template

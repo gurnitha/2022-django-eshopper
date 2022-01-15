@@ -132,6 +132,14 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
+#### 12. Retrieve and fetch featured products
+
+        modified:   README.md
+        new file:   media/products/2022/01/15/product3.jpg
+        modified:   shop/views.py
+        modified:   templates/index.html
+
+
 
 
 
