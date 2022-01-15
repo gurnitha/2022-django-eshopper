@@ -1,9 +1,25 @@
+# shop/views.py
+
+# Django modules
 from django.shortcuts import render
+
+# Locals
+from shop import models
 
 # Create your views here.
 
 def index(request):
-	return render(request, 'index.html')
+
+	# Grab all category objects
+	category_list = models.Category.objects.all()
+	
+	# Put objects in context dictionary
+	context = {
+		'category_list':category_list,
+	}
+	
+	# Fetch context into the template
+	return render(request, 'index.html', context)
 
 
 def products(request):

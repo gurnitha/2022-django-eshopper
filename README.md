@@ -118,6 +118,11 @@ Based on CodingEx tutorial on Youtube
         modified:   shop/models.py
 
 
+#### 10. Retrieve and fetch categories
+
+        modified:   README.md
+        modified:   shop/views.py
+        modified:   templates/index.html
 
 
 
