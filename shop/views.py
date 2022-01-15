@@ -20,7 +20,7 @@ def index(request):
 	category_id = request.GET.get('category')
 	# 2. Get all products based on its category and subcategory
 	if category_id:
-		featured_product_list = models.Product.objects.filter(subcategory_id=category_id, is_featured=True)
+		featured_product_list = models.Product.objects.filter(subcategory_id=category_id, is_featured=True).order_by('-id')[0:1]
 	# 3. Otherwise grab all products
 	else:
 		featured_product_list = models.Product.objects.filter(is_featured=True)

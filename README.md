@@ -148,6 +148,12 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
+#### 14. Showing LIFO for featured products and limit the product to display
+
+        modified:   README.md
+        modified:   shop/views.py
+
+
 
 
 
