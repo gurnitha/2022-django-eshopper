@@ -13,8 +13,17 @@ def index(request):
 	# Grab all category objects
 	category_list = models.Category.objects.all()
 
-	# Grab all featured products
-	featured_product_list = models.Product.objects.filter(is_featured=True)
+
+	# LOAD FEATURED PRODUCTS BASED ON ITS CATEGORY AND SUBCATEGORY
+
+	# 1. Get category id
+	category_id = request.GET.get('category')
+	# 2. Get all products based on its category and subcategory
+	if category_id:
+		featured_product_list = models.Product.objects.filter(subcategory_id=category_id, is_featured=True)
+	# 3. Otherwise grab all products
+	else:
+		featured_product_list = models.Product.objects.filter(is_featured=True)
 
 	# Put objects in context dictionary
 	context = {

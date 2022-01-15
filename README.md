@@ -140,6 +140,16 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
+#### 13. Showing and linking featured product based on category and subcategory 
+
+        modified:   README.md
+        new file:   media/products/2022/01/15/gallery1.jpg
+        modified:   shop/views.py
+        modified:   templates/index.html
+
+
+
+
 
 
 
