@@ -132,7 +132,7 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
-#### 12. Retrieve and fetch featured products
+#### 12. Retrieve and fetch featured products by category and subcategory
 
         modified:   README.md
         new file:   media/products/2022/01/15/product3.jpg
@@ -162,6 +162,12 @@ Based on CodingEx tutorial on Youtube
         new file:   shop/migrations/0005_brand_brand_slug.py
         modified:   shop/models.py
 
+
+#### 16. Retrieve and fetch featured products by brand
+
+        modified:   README.md
+        modified:   shop/views.py
+        modified:   templates/index.html
 
 
 
