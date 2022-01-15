@@ -125,7 +125,11 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
+#### 11. Retrieve and fetch subcategories
 
+        modified:   README.md
+        modified:   shop/views.py
+        modified:   templates/index.html
 
 
 

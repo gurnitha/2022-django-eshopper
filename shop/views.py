@@ -12,7 +12,7 @@ def index(request):
 
 	# Grab all category objects
 	category_list = models.Category.objects.all()
-	
+
 	# Put objects in context dictionary
 	context = {
 		'category_list':category_list,
