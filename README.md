@@ -103,6 +103,19 @@ Based on CodingEx tutorial on Youtube
 #### ================== END STATIC APP ========================
 
 
+#### 9. Creare model for Category, SubCategory and Product
+
+        modified:   README.md
+        new file:   media/products/2022/01/15/product1.jpg
+        new file:   media/products/2022/01/15/product2.jpg
+        new file:   media/products/2022/01/15/product4.jpg
+        new file:   media/products/2022/01/15/product5.jpg
+        new file:   media/products/2022/01/15/product6.jpg
+        modified:   shop/admin.py
+        new file:   shop/migrations/0001_initial.py
+        new file:   shop/migrations/0002_auto_20220115_0736.py
+        new file:   shop/migrations/0003_auto_20220115_0739.py
+        modified:   shop/models.py
 
 
 
