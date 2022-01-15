@@ -18,6 +18,11 @@ class SubcategoryAdmin(admin.ModelAdmin):
 	list_display = ['subcategory_name', 'subcategory_slug']
 	prepopulated_fields = {'subcategory_slug':('subcategory_name',)}
 
+@admin.register(models.Brand)
+class BrandAdmin(admin.ModelAdmin):
+	list_display = ['brand_name', 'brand_slug']
+	prepopulated_fields = {'brand_slug':('brand_name',)}
+
 @admin.register(models.Product)
 class ProductAdmin(admin.ModelAdmin):
 	list_display = ['product_name', 'product_slug', 

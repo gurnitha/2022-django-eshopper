@@ -154,6 +154,15 @@ Based on CodingEx tutorial on Youtube
         modified:   shop/views.py
 
 
+#### 15. Create Brand model with OneToMany rel to Product and add some items
+
+        modified:   README.md
+        modified:   shop/admin.py
+        new file:   shop/migrations/0004_auto_20220115_1447.py
+        new file:   shop/migrations/0005_brand_brand_slug.py
+        modified:   shop/models.py
+
+
 
 
 

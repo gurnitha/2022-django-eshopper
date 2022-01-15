@@ -32,6 +32,19 @@ class SubCategory(models.Model):
 		return self.subcategory_name
 
 
+# Model: Brand
+class Brand(models.Model):
+	brand_name = models.CharField(max_length=50)
+	brand_slug = models.SlugField(max_length=100, db_index=True, null=True)
+	
+	class Meta:
+		verbose_name = 'Brand'
+		verbose_name_plural = 'Brands'
+
+	def __str__(self):
+		return self.brand_name
+
+
 # Model: Product
 class Product(models.Model):
 	product_name = models.CharField(max_length=100, db_index=True)
@@ -41,7 +54,10 @@ class Product(models.Model):
 					on_delete=models.CASCADE)
 	subcategory_id = models.ForeignKey(
 					SubCategory, related_name='products', 
-					on_delete=models.CASCADE)	
+					on_delete=models.CASCADE)
+	brand_id = models.ForeignKey(
+					Brand, related_name='products', 
+					on_delete=models.CASCADE, null=True)	
 	product_image = models.ImageField(
 					upload_to='products/%Y/%m/%d',
 					blank=True)
