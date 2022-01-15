@@ -170,6 +170,13 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
+#### 17. Retrieve and fetch products by category in accordion tab
+
+        modified:   README.md
+        modified:   shop/views.py
+        modified:   templates/index.html
+
+
 
 
 

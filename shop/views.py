@@ -59,11 +59,17 @@ def index(request):
 	else:
 		featured_product_list = models.Product.objects.filter(is_featured=True)
 
+	'''END LOAD ... '''
+
+	product_list = models.Product.objects.all()
+
+
 	# 6. Put objects in context dictionary
 	context = {
 		'category_list':category_list,
 		'brand_list':brand_list,
 		'featured_product_list':featured_product_list,
+		'product_list':product_list
 	}
 
 	# 7. Fetch context into the template
