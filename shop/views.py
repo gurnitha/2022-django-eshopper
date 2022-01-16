@@ -65,6 +65,8 @@ def index(request):
 	recomended_product_list = models.Product.objects.filter(is_recomended=True).order_by('-id')
 	# recomended_product_list = models.Product.objects.filter(is_recomended=True).order_by('-id')[0:3]
 
+	# Grab last 3 sliders
+	slider_list = models.Slider.objects.order_by('-id')[0:4]
 
 	# 6. Put objects in context dictionary
 	context = {
@@ -72,7 +74,8 @@ def index(request):
 		'brand_list':brand_list,
 		'featured_product_list':featured_product_list,
 		'product_list':product_list,
-		'recomended_product_list':recomended_product_list
+		'recomended_product_list':recomended_product_list,
+		'slider_list':slider_list
 	}
 
 	# 7. Fetch context into the template

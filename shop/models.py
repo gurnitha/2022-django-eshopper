@@ -11,9 +11,10 @@ class Slider(models.Model):
 	slider_sub_title = models.CharField(max_length=150)
 	slider_description = models.TextField()
 	slider_image = models.ImageField(upload_to='sliders//%Y/%m/%d') 
+	slider_image_price = models.ImageField(upload_to='sliders//%Y/%m/%d', blank=True, null=True) 
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
-	
+
 	class Meta:
 		verbose_name = 'Slider'
 		verbose_name_plural = 'Sliders'

@@ -209,6 +209,19 @@ Based on CodingEx tutorial on Youtube
         modified:   shop/models.py
 
 
+#### 20. Modify Slider model by adding image_price field, retrieve and fetch sliders
+
+        modified:   README.md
+        new file:   media/sliders/2022/01/16/pricing.png
+        new file:   media/sliders/2022/01/16/pricing_KQmCo36.png
+        new file:   media/sliders/2022/01/16/pricing_pYWSOtt.png
+        new file:   media/sliders/2022/01/16/pricing_wzDk2Aa.png
+        new file:   shop/migrations/0007_slider_slider_image_price.py
+        modified:   shop/models.py
+        modified:   shop/views.py
+        modified:   templates/index.html
+
+
 
 
 
