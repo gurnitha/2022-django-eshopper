@@ -18,6 +18,14 @@ class UserCreateForm(UserCreationForm):
 		model = User
 		fields = ('username', 'email', 'password1', 'password2')
 
+	def __init__(self, *args, **kwargs):
+		super(UserCreateForm, self).__init__(*args, **kwargs)
+        
+		self.fields['username'].widget.attrs['placeholder'] = 'Username'
+		self.fields['email'].widget.attrs['placeholder'] = 'Email'
+		self.fields['password1'].widget.attrs['placeholder'] = 'Password'
+		self.fields['password2'].widget.attrs['placeholder'] = 'Confirm password'
+
 	def save(self, commit=True):
 		user = super(UserCreateForm, self).save(commit=False)
 		user.email = self.cleaned_data['email']
@@ -27,5 +35,5 @@ class UserCreateForm(UserCreationForm):
 
 	def clean_email(self):
 		if User.objects.filter(email=self.cleaned_data['email']).exists():
-			raise form.ValidationError(self.fields['email'].error_messages['exists'])
+			raise forms.ValidationError(self.fields['email'].error_messages['exists'])
 		return self.cleaned_data['email']

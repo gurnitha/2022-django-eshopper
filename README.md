@@ -242,7 +242,17 @@ Based on CodingEx tutorial on Youtube
         new file:   users/templates/users/register.html
         modified:   users/views.py
 
+#### 23. SIGN UP 
 
+        NOTE: Sign Up :)
+
+        modified:   README.md
+        modified:   users/models.py
+        deleted:    users/templates/users/register.html
+        renamed:    users/templates/users/login.html -> users/templates/users/registration/login.html
+        new file:   users/templates/users/registration/signup.html
+        modified:   users/urls.py
+        modified:   users/views.py
 
 
 
