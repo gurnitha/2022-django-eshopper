@@ -235,8 +235,12 @@ Based on CodingEx tutorial on Youtube
         modified:   users/views.py
 
 
+#### 22. Move and modify login and signup page
 
-
+        modified:   README.md
+        renamed:    templates/register_login.html -> users/templates/users/login.html
+        new file:   users/templates/users/register.html
+        modified:   users/views.py
 
 
 
