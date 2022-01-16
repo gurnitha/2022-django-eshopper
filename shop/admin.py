@@ -8,6 +8,10 @@ from shop import models
 
 # Register your models here.
 
+@admin.register(models.Slider)
+class SliderAdmin(admin.ModelAdmin):
+	list_display = ['slider_title', 'created']
+
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
 	list_display = ['category_name', 'category_slug']

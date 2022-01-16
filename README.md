@@ -197,6 +197,17 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
+#### 19. Create Slider model
+
+        modified:   README.md
+        new file:   media/sliders/2022/01/16/gallery4.jpg
+        new file:   media/sliders/2022/01/16/girl1.jpg
+        new file:   media/sliders/2022/01/16/girl2.jpg
+        new file:   media/sliders/2022/01/16/girl3.jpg
+        modified:   shop/admin.py
+        new file:   shop/migrations/0006_slider.py
+        modified:   shop/models.py
+
 
 
 

@@ -5,6 +5,23 @@ from django.db import models
 
 # Create your models here.
 
+# Model: Slider
+class Slider(models.Model):
+	slider_title = models.CharField(max_length=100)
+	slider_sub_title = models.CharField(max_length=150)
+	slider_description = models.TextField()
+	slider_image = models.ImageField(upload_to='sliders//%Y/%m/%d') 
+	created = models.DateTimeField(auto_now_add=True)
+	updated = models.DateTimeField(auto_now=True)
+	
+	class Meta:
+		verbose_name = 'Slider'
+		verbose_name_plural = 'Sliders'
+
+	def __str__(self):
+		return self.slider_title
+
+
 # Model: Category
 class Category(models.Model):
 	category_name = models.CharField(max_length=50, db_index=True)
