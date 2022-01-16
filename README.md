@@ -177,6 +177,25 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
+#### 18. Displaying redomended products (maximum 6 items) to the home page
+
+        NOTE:
+
+        1. At last, after one full day trying and error making the recomended
+           produts slider works, I found my own solution.
+        2. My solution might be not the best or the right way, but it works
+           for showing maximum 9 items. Each slide contains 3 items.
+        3. It you need more items to show 12 items, un-comment the commented codes.
+        4. If you want to shoe 15 item, copy the same code, change the number of 
+           it to slice, let say, change:
+           FROM : slice:"9:12",
+           TO   : slice:"12:15",
+        5. For now I am :) with my solution.
+
+        modified:   README.md
+        modified:   shop/views.py
+        modified:   templates/index.html
+
 
 
 

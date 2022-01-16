@@ -62,6 +62,8 @@ def index(request):
 	'''END LOAD ... '''
 
 	product_list = models.Product.objects.all()
+	recomended_product_list = models.Product.objects.filter(is_recomended=True).order_by('-id')
+	# recomended_product_list = models.Product.objects.filter(is_recomended=True).order_by('-id')[0:3]
 
 
 	# 6. Put objects in context dictionary
@@ -69,7 +71,8 @@ def index(request):
 		'category_list':category_list,
 		'brand_list':brand_list,
 		'featured_product_list':featured_product_list,
-		'product_list':product_list
+		'product_list':product_list,
+		'recomended_product_list':recomended_product_list
 	}
 
 	# 7. Fetch context into the template
