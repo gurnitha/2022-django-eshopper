@@ -102,6 +102,7 @@ Based on CodingEx tutorial on Youtube
 
 #### ================== END STATIC APP ========================
 
+#### ================== DYNAMIC HOME PAGE =====================
 
 #### 9. Creare model for Category, SubCategory and Product
 
@@ -222,8 +223,16 @@ Based on CodingEx tutorial on Youtube
         modified:   templates/index.html
 
 
+#### ================== END DYNAMIC HOME PAGE =====================
+
+#### ================== USER AUTHENTICATION =======================
 
 
+#### 21. Create UserCreateForm class 
+
+        modified:   README.md
+        modified:   users/models.py
+        modified:   users/views.py
 
 
 
