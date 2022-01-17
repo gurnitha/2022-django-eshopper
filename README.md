@@ -242,6 +242,7 @@ Based on CodingEx tutorial on Youtube
         new file:   users/templates/users/register.html
         modified:   users/views.py
 
+
 #### 23. SIGN UP 
 
         NOTE: Sign Up :)
@@ -254,6 +255,15 @@ Based on CodingEx tutorial on Youtube
         modified:   users/urls.py
         modified:   users/views.py
 
+
+#### 24. SIGN IN
+
+        modified:   README.md
+        modified:   config/urls.py
+        modified:   templates/base.html
+        modified:   users/templates/users/registration/login.html
+        modified:   users/templates/users/registration/signup.html
+        modified:   users/views.py
 
 
 

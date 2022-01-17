@@ -2,7 +2,8 @@
 
 # Django modules
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login as dj_login
+from django.contrib.auth.forms import AuthenticationForm
 
 # Locals
 from users.models import UserCreateForm
@@ -20,7 +21,7 @@ def signup(request):
 				username = form.cleaned_data['username'],
 				password = form.cleaned_data['password1'],
 			)
-			# login(request.new_user)
+			dj_login(request,new_user)
 			return redirect('index')
 	else:
 		form = UserCreateForm()
@@ -33,4 +34,18 @@ def signup(request):
 
 
 def login(request):
-	return render(request, 'users/registration/login.html')
+
+	if request.method == 'GET':
+		return render(request, 'users/registration/login.html', {'form':AuthenticationForm})
+
+	else:
+		user = authenticate(request,
+				username=request.POST['username'],
+				password=request.POST['password'])
+
+		if user is None:
+			return render(request,'users/registration/login.html', {'form': AuthenticationForm(), 'error': 'username and password do not match'})
+	
+		else:
+			dj_login(request,user)
+			return redirect('index')
