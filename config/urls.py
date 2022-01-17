@@ -15,7 +15,26 @@ urlpatterns = [
     path('', include('users.urls')),
 
     # Accounts
-    # path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+
+    # admin/
+    # [name='index']
+    # products/ [name='products']
+    # product/1 [name='product_detail']
+    # cart/ [name='cart']
+    # contact/ [name='contact']
+    # posts/ [name='posts']
+    # post/1 [name='post_detail']
+    # signup/ [name='signup']
+    # logout/ [name='logout']
+    # accounts/ login/ [name='login']
+    # accounts/ logout/ [name='logout']
+    # accounts/ password_change/ [name='password_change']
+    # accounts/ password_change/done/ [name='password_change_done']
+    # accounts/ password_reset/ [name='password_reset']
+    # accounts/ password_reset/done/ [name='password_reset_done']
+    # accounts/ reset/<uidb64>/<token>/ [name='password_reset_confirm']
+    # accounts/ reset/done/ [name='password_reset_complete']
 ]
 
 if settings.DEBUG:

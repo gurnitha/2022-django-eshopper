@@ -257,7 +257,6 @@ Based on CodingEx tutorial on Youtube
 
 
 #### 24. SIGN IN
-
         modified:   README.md
         modified:   config/urls.py
         modified:   templates/base.html
@@ -266,8 +265,45 @@ Based on CodingEx tutorial on Youtube
         modified:   users/views.py
 
 
+#### 24. SIGN IN - Using django.contrib.auth.urls
 
 
+        NOTE:
+
+        Using django.contrib.auth.urls in the config/urls.py
+        it does not required to create login view, beacuse by default
+        it has login view method.       
+
+        # Accounts
+        path('accounts/', include('django.contrib.auth.urls')),
+
+        # admin/
+        # [name='index']
+        # products/ [name='products']
+        # product/1 [name='product_detail']
+        # cart/ [name='cart']
+        # contact/ [name='contact']
+        # posts/ [name='posts']
+        # post/1 [name='post_detail']
+        # signup/ [name='signup']
+        # logout/ [name='logout']
+        # accounts/ login/ [name='login']
+        # accounts/ logout/ [name='logout']
+        # accounts/ password_change/ [name='password_change']
+        # accounts/ password_change/done/ [name='password_change_done']
+        # accounts/ password_reset/ [name='password_reset']
+        # accounts/ password_reset/done/ [name='password_reset_done']
+        # accounts/ reset/<uidb64>/<token>/ [name='password_reset_confirm']
+        # accounts/ reset/done/ [name='password_reset_complete']
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   templates/base.html
+        renamed:    users/templates/users/registration/login.html -> users/templates/registration/login.html
+        renamed:    users/templates/users/registration/signup.html -> users/templates/registration/signup.html
+        modified:   users/urls.py
+        modified:   users/views.py
 
 
 
